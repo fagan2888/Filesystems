@@ -64,6 +64,8 @@ def create(
     link,
     readlink,
 
+    move,
+
     realpath=_realpath,
     remove=_recursive_remove,
 ):
@@ -86,6 +88,8 @@ def create(
         get_contents=_get_contents,
         set_contents=_set_contents,
         create_with_contents=_create_with_contents,
+
+        move=move,
 
         remove=remove,
         removing=_removing,
